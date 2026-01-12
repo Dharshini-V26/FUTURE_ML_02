@@ -16,6 +16,7 @@ Three models were trained and evaluated:
 3) XGBoost
 ### Model Comparison (ROC-AUC):
 <img width="600" height="227" alt="image" src="https://github.com/user-attachments/assets/20c790e2-b87c-4ff8-9c84-4c1289d4e90a" />
+
 ### Why Logistic Regression Was Selected
 Although XGBoost is a powerful algorithm, Logistic Regression achieved the highest ROC-AUC score on this dataset.
 
@@ -26,6 +27,8 @@ It also provided:
 
 Hence, Logistic Regression was chosen as the final production model.
 ### ROC Curve Analysis
+<img width="770" height="584" alt="image" src="https://github.com/user-attachments/assets/e66dccdf-b7ae-4cf8-98ca-ab00fa6ed89b" />
+
 1) Logistic Regression consistently showed a higher True Positive Rate at lower False Positive Rates
 2) This indicates better separation between churned and retained customers
 3) ROC analysis confirmed it as the best-performing model
@@ -56,3 +59,4 @@ pip install -r requirements.txt
 3) Run the web app
    
 streamlit run app.py
+
